@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CloudLaunch — a sample static website for cloud deployment practice." />
+  <title>CloudLaunch | Static Website Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="CloudLaunch home"><span class="brand-mark">☁</span> CloudLaunch</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="nav-links" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#architecture">How it works</a>
+      <a href="#deploy">Deploy</a>
+    </nav>
+    <a class="header-cta" href="#deploy">Start learning <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR FIRST CLOUD PROJECT</div>
+        <h1>From local files<br />to <span>live on the cloud.</span></h1>
+        <p class="hero-text">A hands-on starter project to learn how static websites are hosted, deployed, and delivered to people around the world.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#deploy">Explore deployment <span>→</span></a>
+          <a class="button button-secondary" href="#architecture">See how it works</a>
+        </div>
+        <div class="hero-note"><span class="check">✓</span> HTML, CSS & JavaScript <span class="note-divider">·</span> No backend required</div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a website being deployed to the cloud">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="cloud-symbol">☁</div>
+        <div class="server-card">
+          <div class="server-top"><span class="server-dot"></span><span class="server-dot"></span><span class="server-dot"></span><span class="server-label">DEPLOYMENT STATUS</span></div>
+          <div class="server-content">
+            <div class="status-row"><span class="status-icon">✓</span><div><strong>Static files</strong><small>HTML · CSS · JS</small></div><span class="mini-status">READY</span></div>
+            <div class="status-row"><span class="status-icon">↗</span><div><strong>Cloud hosting</strong><small>Public web endpoint</small></div><span class="mini-status">NEXT</span></div>
+            <div class="terminal"><span>$</span> deploy website <i>_</i></div>
+          </div>
+        </div>
+        <div class="floating-tag tag-top">⌘ &nbsp; Simple setup</div>
+        <div class="floating-tag tag-bottom"><span class="live-dot"></span> Built for beginners</div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Project facts">
+      <div><strong>03</strong><span>Core web files</span></div>
+      <div><strong>0</strong><span>Backend servers</span></div>
+      <div><strong>100%</strong><span>Beginner friendly</span></div>
+      <div><strong>∞</strong><span>Room to experiment</span></div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="section-heading">
+        <div class="eyebrow">WHAT YOU'LL PRACTICE</div>
+        <h2>Small project. <span>Real skills.</span></h2>
+        <p>Understand the basic building blocks behind a real-world static website deployment.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon purple">⌘</div><h3>Build the frontend</h3><p>Organize HTML, CSS, and JavaScript into clean files that work together.</p><span class="card-index">01 / BUILD</span></article>
+        <article class="feature-card"><div class="feature-icon blue">☁</div><h3>Host in the cloud</h3><p>Learn how cloud storage or static hosting can serve your website files.</p><span class="card-index">02 / HOST</span></article>
+        <article class="feature-card"><div class="feature-icon green">↗</div><h3>Test the deployment</h3><p>Open your public URL, check the page, and troubleshoot missing assets.</p><span class="card-index">03 / VERIFY</span></article>
+      </div>
+    </section>
+
+    <section class="architecture-section" id="architecture">
+      <div class="section architecture-layout">
+        <div class="section-heading align-left">
+          <div class="eyebrow">THE DEPLOYMENT FLOW</div>
+          <h2>Understand the <span>journey.</span></h2>
+          <p>Your browser loads the files that you publish to a hosting platform. For this demo, the website itself does not need a backend.</p>
+        </div>
+        <div class="flow-card">
+          <div class="flow-step"><div class="flow-number">01</div><div><strong>Your project folder</strong><p>index.html · style.css · script.js</p></div><span class="flow-symbol">▤</span></div>
+          <div class="flow-connector"></div>
+          <div class="flow-step"><div class="flow-number">02</div><div><strong>Cloud hosting</strong><p>Upload or publish your static files</p></div><span class="flow-symbol">☁</span></div>
+          <div class="flow-connector"></div>
+          <div class="flow-step"><div class="flow-number">03</div><div><strong>Public website URL</strong><p>Visitors open the deployed website</p></div><span class="flow-symbol">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section deploy-section" id="deploy">
+      <div class="deploy-panel">
+        <div class="deploy-copy"><div class="eyebrow">YOUR NEXT STEP</div><h2>Ready to make it <span>live?</span></h2><p>Use this project to practice deploying a static website to AWS S3, Azure Static Web Apps, or another hosting provider.</p><div class="deploy-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Cloud hosting</span></div></div>
+        <div class="deploy-action"><div class="checklist-icon">✓</div><strong>Deployment checklist</strong><p>Use this mini checklist before publishing.</p><label><input type="checkbox" class="task-check" /> All three files are in one folder</label><label><input type="checkbox" class="task-check" /> Website works locally</label><label><input type="checkbox" class="task-check" /> Cloud URL opens successfully</label><div class="progress-track"><div id="progressBar" class="progress-bar"></div></div><small id="progressText">0 of 3 tasks complete</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">☁</span> CloudLaunch</a><p>Built as a learning project for cloud deployment.</p><a href="#home" class="back-top">Back to top ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
